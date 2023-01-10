@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+    font-family: "Barlow";
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    border-bottom: 2px solid #282828;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 0 2rem;
+    border-bottom: 2px solid #282828;
+}
+
+#text {
+    width: min(600px, 100%);
+}
+
+#planet {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, black, #62ce9a);
+    box-shadow: 5px 5px 25px rgb(0, 255, 153);
+}
+
+#hero {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    color: #747473;
+}
+
+#hero a {
+    border: 1px solid #3e3e3e;
+    background-color: #2e2e2e;
+    border-radius: 6px;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+#banner {
+    padding: 4rem;
+    background-color: #181818;
+    text-align: center;
+}
+
+#banner h2 {
+    font-size: 4rem;
+}
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1.25rem;
+    padding: 2rem;
+}
+
+.card {
+    height: max-content;
+    width: 16rem;
+    border: 1px solid #464646;
+    background-color: #232323;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.card p:last-child {
+    color: #747373;
+}
