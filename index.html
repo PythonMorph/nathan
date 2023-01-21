@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Nathan</title>
+    <script src = "sendEmail.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("_-M2BKibG3rb7fdm-");
+   })();
+</script>
+
 </head>
 <body>
     <nav>
@@ -21,7 +31,7 @@
                 throughout the solar system, from suborbital flights to trips to Mars.
                 Join us on a journey to the stars and beyond.
             </p>
-            <a href="#testimonials"">Learn more</a>
+            <a href="#testimonials">Learn more</a>
         </div>
         <div id="planet"></div>
     </section>  
@@ -61,5 +71,22 @@
             </p>
         </div>
     </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div>
+            <h6 for = "name">Name</h6>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <h6 for = "email">Your Email</h6>
+            <input type="text" id="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <h6 for = "message">Message</h6>
+            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button onclick="sendMail()">Send</button>
+    </section>
+    
 </body>
 </html>
