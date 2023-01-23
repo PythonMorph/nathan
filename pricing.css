@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 
 body {
-    text-align: center;
     margin: 0;
+    padding-top: 4rem;
+    text-align: center;
     background-color: #1e1e1e;
     font-family: "Barlow";
     line-height: 1.4;
@@ -10,11 +11,17 @@ body {
 }
 
 nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
     border-bottom: 2px solid #282828;
+    background-color: black;
+    box-shadow: 0 5px 10px black;
+    z-index: 2;
 }
 
 nav a {
@@ -28,14 +35,13 @@ section {
 }
 
 h2  {
-    letter-spacing: 0.2rem;
     color: white;
     font-size: 4rem;
 }
 
-h3, h4 {
+h3 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #8e8e8e;
 }
 
@@ -73,7 +79,6 @@ span {
 }
 
 .card-item:hover {
-    
     transform: scale(1.05);
 }
 
@@ -83,18 +88,19 @@ span {
     
 }
 
-.card-item div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.card-item span {
+    float: left;
+    margin: 1rem 1.5rem;
+    padding: 0.5rem;
 }
 
 .card-item button {
+    float: right;
     background-color:#3e3e3e;
     color:white;
     font-size: 1rem;
     padding: .75rem;
-    margin: 1rem 1.5rem 1rem 1.5rem; 
+    margin: 1rem 1.5rem;
     border-radius: 15px;
     border: 3px solid  #4e4e4e;
     transition: transform .15s;
@@ -103,5 +109,3 @@ span {
 button:hover {
     transform: scale(1.05);
 }
-
-
