@@ -19,4 +19,23 @@ function sendMail(){
     .catch((err) => console.log(err))
 }
 
+function sendBookingISS(){
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+    };
+    const serviceID = "service_gcwzll4"
+    const templateID = "template_86ja7l6"
+
+    emailjs.send(serviceID,templateID,params)
+    .then(
+    res => {
+            document.getElementById("name").value = ''
+            document.getElementById("email").value = ''
+            console.log(res)
+            alert('Your message has been sent sucessfully')
+        })
+    .catch((err) => console.log(err))
+}
+
 
