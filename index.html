@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="./style.css">
     <title>Nathan</title>
     <script src = "sendEmail.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("_-M2BKibG3rb7fdm-");
-   })();
-</script>
-
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("_-M2BKibG3rb7fdm-");
+        })()
+   </script>
 </head>
 <body>
     <nav>
@@ -25,7 +22,7 @@
     </nav>
     <section id="hero">
         <div id="text">
-            <h2>Experience space travel <br> with shuttle</h2>
+            <h2>Experience space travel <br> with <span>shuttle</span></h2>
             <p>
                 Shuttle offers a variety of space travel adventures to destinations
                 throughout the solar system, from suborbital flights to trips to Mars.
@@ -38,7 +35,7 @@
     <section id="banner">
         <h2>The best space travel experience</h2>
         <div>
-            <h2>Affordable</h2>
+            <h3>Affordable</h3>
             <p>
                 Shuttle is revolutionizing space travel with its affordable prices. Using reusable spcaecraft
                 and cutting-edge technology, Shuttle aims to make space tourism accessible to everyone. Experience the thrill
@@ -47,7 +44,7 @@
             <a href="#">Learn more</a>
         </div>
         <div>
-            <h2>Safety</h2>
+            <h3>Safety</h3>
             <p>
                 Experience space travel with confidence and safety. Shuttle prioritizes safety in all aspects of the journey, from
                 expertly-trained pilots to state-of-the-art technology and rigorous testing procedures. Trust us to provide a safetyand unforgettable journey.
@@ -55,7 +52,7 @@
             <a href="#">Learn more</a>
         </div>
         <div>
-            <h2>Exciting</h2>
+            <h3>Exciting</h3>
             <p>
                 Join the ultimate adventure with Shuttle. Experience the thrill of space travel, from launch to awe-inspring views of Earth.
                 We offer a variety of fun and exciting options for all interests. book your journey now and make unforgettable memories.
@@ -111,7 +108,6 @@
             <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
         </div>
         <button onclick="sendMail()">Send</button>
-    </section>
-    
+    </section> 
 </body>
 </html>

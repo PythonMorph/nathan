@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: #1e1e1e;
@@ -9,11 +17,16 @@ body {
 }
 
 nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
     border-bottom: 2px solid #282828;
+    background-color: black;
+    box-shadow: 0 5px 10px black;
 }
 
 nav a {
@@ -31,19 +44,19 @@ section {
 }
 
 #planet {
-    height: 20rem;
-    width: 20rem;
+    height: min(20rem, 50vmin);
+    width: min(20rem, 50vmin);
     border-radius: 50%;
-    background: radial-gradient(circle at top left, black, #62ce9a);
-    box-shadow: 5px 5px 25px rgb(0, 255, 153);
+    background: radial-gradient(circle at top left, #00AE37, #007109);
 }
 
 #hero {
-    height: 90vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-top: 4rem;
 }
 
 #hero h2 {
@@ -53,6 +66,12 @@ section {
 #hero p {
     font-size: 1.25rem;
     color: #747473;
+}
+
+#hero span {
+    color: black;
+    background-color: white;
+    padding: 0 0.5rem;
 }
 
 #hero a, #banner a {
@@ -67,7 +86,15 @@ section {
 #banner {
     padding: 4rem;
     background-color: #181818;
+    background: radial-gradient(#2e2e2e 20%, transparent 20%);
+    background-position: 10px 10px;
+    background-size: 20px 20px;
     font-size: 1.25rem;
+}
+
+#banner h2, #testimonials h2, #contact h2 {
+    font-size: 3rem;
+    text-align: center;
 }
 
 #banner > div {
@@ -75,13 +102,11 @@ section {
 }
 
 #testimonials {
-    text-align: center;
     font-size: 1.25rem;
     padding: 2rem;
 }
 
 #testimonials > div {
-    text-align: start;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,12 +127,18 @@ section {
 }
 
 #contact {
-    width: 20rem;
+    width: min(100%, 600px);
     margin: 0 auto;
     padding: 4rem;
     font-size: 2rem;
-    text-align: center;
+    text-align: start;
     font-family: "Barlow";
+}
+
+#contact button {
+    border: 1px solid #3e3e3e;
+    background-color: #2e2e2e;
+    border-radius: 6px;
 }
 
 #contact h2, #contact h6 {
@@ -115,25 +146,25 @@ section {
     margin: 1rem 0;
 }
 
-#contact input, #contact button {
+#contact input, #contact button, #contact textarea {
     font-family: "Barlow";
+}
+
+#contact input, #contact button {
     width: 100%;
     height: 2rem;
-    background: transparent;
     color: white;
-    border: 1px solid white
 }
 
 #contact input {
     border: none;
     background: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid #3e3e3e;
 }
 
 #contact textarea {
     width: 100%;
+    height: 6rem;
     background: transparent;
     color: white;
-    border: 1px solid white
 }
-
