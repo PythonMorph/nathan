@@ -48,7 +48,9 @@ section {
     height: min(20rem, 50vmin);
     width: min(20rem, 50vmin);
     border-radius: 50%;
-    background: radial-gradient(circle at top left, #00AE37, #007109);
+    /*background: radial-gradient(circle at top left, #00AE37, #007109);*/
+    background-image: url("/images/ship_moon_background.jpg");
+    background-size: cover;
 }
 
 #hero {
