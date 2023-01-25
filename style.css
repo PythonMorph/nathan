@@ -74,6 +74,7 @@ section {
     color: black;
     background-color: white;
     padding: 0 0.5rem;
+    border-radius: 1.25rem;
 }
 
 #hero a, #banner a {
