@@ -24,7 +24,7 @@ function sendBookingTravel(){
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
-        travel: document.getElementById("travel").value
+        travel: document.getElementById("travel").dataset.value
     };
     const serviceID = "service_gcwzll4"
     const templateID = "template_86ja7l6"
