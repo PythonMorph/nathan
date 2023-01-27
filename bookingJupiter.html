@@ -15,8 +15,9 @@
    </script>
 </head>
 <body>
-    <section id="contact">
+    <section style = 'text-align: center' id="contact">
         <h2>Book Now</h2>
+        <input readonly style='text-align: center;' id = "travel" value="Jupiter"></h6>
         <div>
             <h6 for="name">Name</h6>
             <input type="text" id="name" placeholder="Enter your name">
@@ -24,7 +25,8 @@
         <div>
             <h6 for="email">Your Email</h6>
             <input type="text" id="email" placeholder="Enter your email">
-        <button onclick="sendBookingISS()">Book</button>
+        <button style = 'cursor: pointer;'onclick="sendBookingTravel()">Book</button>
+        <small style="font-size: 10px;">Payment Information will be sent out shortly</small>
             <h6 style="text-align: center"><a href = "pricing.html" style="color: white; text-decoration: none;">Go back</a></h6>
         </section>
 </body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Shuttle</title>
+    <script src = "sendEmail.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("_-M2BKibG3rb7fdm-");
+        })()
+   </script>
+</head>
+<body>
+    <section style = 'text-align: center' id="contact">
+        <h2>Book Now</h2>
+        <input readonly style='text-align: center;' id = "travel" value="International Space Station"></h6>
+        <div>
+            <h6 for="name">Name</h6>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <h6 for="email">Your Email</h6>
+            <input type="text" id="email" placeholder="Enter your email">
+        <button style = 'cursor: pointer;'onclick="sendBookingTravel()">Book</button>
+        <small style="font-size: 10px;">Payment Information will be sent out shortly</small>
+            <h6 style="text-align: center"><a href = "pricing.html" style="color: white; text-decoration: none;">Go back</a></h6>
+        </section>
+</body>
