@@ -27,7 +27,7 @@ nav {
     padding: 0 1rem;
     border-bottom: 2px solid #282828;
     background-color: black;
-    box-shadow: 0 5px 10px black;
+    box-shadow: 0 5px 20px black;
 }
 
 nav a {
@@ -88,7 +88,7 @@ section {
 
 #banner {
     padding: 4rem;
-    background: radial-gradient(#2e2e2e 20%, transparent 20%);
+    background: radial-gradient(#232323 20%, transparent 20%);
     background-size: 40px 40px;
     font-size: 1.25rem;
 }
@@ -103,6 +103,7 @@ section {
 }
 
 #testimonials {
+    background-color: #1a1a1a;
     font-size: 1.25rem;
     padding: 2rem;
 }
@@ -173,7 +174,7 @@ section {
 
 .footer {
     background-color: white;
-    height:3rem;
+    height: 3rem;
     display: flex;
     justify-content: end;
     align-items: center;
