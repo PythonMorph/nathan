@@ -19,6 +19,7 @@ h2 {
 .safety img {
     height: 40vmin;
     border-radius: 1.5rem;
+    border: 2px solid  #3e3e3e;
 }
 
 .safety p {
@@ -32,3 +33,7 @@ hr {
     border-top: .75rem dotted #3e3e3e;
     width: 40vw;
 }
+
+
+
+
