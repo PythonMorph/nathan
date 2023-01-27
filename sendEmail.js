@@ -15,6 +15,7 @@ function sendMail(){
             document.getElementById("message").value = ''
             console.log(res)
             alert('Your message has been sent sucessfully')
+
         })
     .catch((err) => console.log(err))
 }
@@ -36,6 +37,7 @@ function sendBookingTravel(){
             document.getElementById("travel").value = ''
             console.log(res)
             alert('Your message has been sent sucessfully')
+            location='/pricing.html'
         })
     .catch((err) => console.log(err))
 }
